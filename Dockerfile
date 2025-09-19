@@ -6,7 +6,7 @@ RUN echo 'deb [trusted=yes] https://apt.fury.io/caarlos0/ /' | tee /etc/apt/sour
 
 RUN apt-get update && apt-get install -y libudev-dev git wget python3 python3-pip  python3.13-venv libusb-1.0-0 cmake svu  just lftp
 
-RUN pip3 install --no-cache-dir --upgrade esptool
+# RUN pip3 install --no-cache-dir --upgrade esptool
 
 RUN cargo install espup --locked
 
